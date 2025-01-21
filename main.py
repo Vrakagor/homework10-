@@ -18,4 +18,3 @@ def is_valid_variable(name):
 
 
 user_input = input("Введіть ім'я змінної: ")
-print(is_valid_variable(user_input))
