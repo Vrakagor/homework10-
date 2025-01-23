@@ -6,6 +6,8 @@ def is_valid_variable(name):
     if not name or name in keyword.kwlist:
         return False
 
+    if name == "_":
+        return True
     if name.strip("_") == "":
         return False
 
@@ -18,3 +20,4 @@ def is_valid_variable(name):
     return True
 
 user_input = input("Введіть ім'я змінної: ")
+print(is_valid_variable(user_input))
